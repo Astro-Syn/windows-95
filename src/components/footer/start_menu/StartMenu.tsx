@@ -8,10 +8,8 @@ export default function StartMenu() {
             <p>Windows<span>95</span></p>
 
         </div>
-        <div className='windows-menu'>
-
-        </div>
-                <div className='top-menu'>
+        <div className='windows-menu-nav'>
+            <div className='top-menu'>
                     <p>Programs</p>
                     <p>Documents</p>
                     <p>Settings</p>
@@ -22,6 +20,8 @@ export default function StartMenu() {
                 <div className='bottom-menu'>
                     <p>Shut Down</p>
                 </div>
+        </div>
+                
     </div>
   )
 }

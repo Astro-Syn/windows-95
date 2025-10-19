@@ -1,29 +1,47 @@
 .start-menu-container{
     position: absolute;
-    width: 400px;
+    width: 250px;
     background: var(--start-menu-bg);
-    height: 400px;
-    bottom: 30px;
+    height: 310px;
+    bottom: 32px;
+    border: 1px solid black;
     display: flex;
     flex-direction: row;
+    justify-content: center;
     overflow: hidden;
-    color: black
+    color: black;
+    z-index: 20;
 }
 
-.windows-95-logo-container{
-    position:absolute;
-    width: 100%;
-    left: 0;
-    bottom: 0;
+.windows-95-logo-container {
+ position: absolute;
+ top: 0;
+ left: 0; 
+  width: 470px; 
+  height: 30px; 
+  background: var(--start-menu-side-logo);
+  transform-origin: top left;
+  transform: rotate(-90deg) translateX(-100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.windows-menu-nav {
     display: flex;
-    flex-direction: row;
-    transform: rotate(-90deg);
-    background: var(--start-menu-side-logo);
+    flex-direction: column;
+    
     
 }
 
-.windows-95-logo-container p {
+.windows-95-logo-container a {
     color: var(--start-menu-bg);
     font-weight: bold;
-    font-size: 2em;
+    font-size: 1.5em;
+    
+}
+
+.windows-menu-nav div a {
+    background-color: blue;
 }
