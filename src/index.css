@@ -10,7 +10,12 @@
 
 /*Footer*/
 
---footer-background: gray;
+--footer-background: rgb(196, 196, 196);
 --footer-top-highlight: lightgray;
+--start-menu-bg: rgb(182, 182, 182);
+--start-menu-side-logo: gray;
+}
 
+body{
+  margin: 0;
 }

@@ -1,0 +1,29 @@
+.start-menu-container{
+    position: absolute;
+    width: 400px;
+    background: var(--start-menu-bg);
+    height: 400px;
+    bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    color: black
+}
+
+.windows-95-logo-container{
+    position:absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    transform: rotate(-90deg);
+    background: var(--start-menu-side-logo);
+    
+}
+
+.windows-95-logo-container p {
+    color: var(--start-menu-bg);
+    font-weight: bold;
+    font-size: 2em;
+}
