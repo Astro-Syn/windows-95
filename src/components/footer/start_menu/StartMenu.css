@@ -1,8 +1,8 @@
 .start-menu-container{
     position: absolute;
-    width: 250px;
+    width: 245px;
     background: var(--start-menu-bg);
-    height: 310px;
+    height: 320px;
     bottom: 32px;
     border: 1px solid black;
     display: flex;
@@ -11,6 +11,7 @@
     overflow: hidden;
     color: black;
     z-index: 20;
+    box-shadow: 0 2px 8px 2px black;
 }
 
 .windows-95-logo-container {
@@ -25,23 +26,75 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 2;
 }
 
-
 .windows-menu-nav {
+    position: absolute;
+    left: 0;
     display: flex;
     flex-direction: column;
+    justify-content: start;
     
-    
+}
+
+.top-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.top-menu a,
+.bottom-menu a{
+    display: flex;
+    align-items: center;
+   padding:0  40px;
+    margin: 1px;
+    text-decoration: none;
+    color: black;    
+    width: 100%;
+    font-size: 14px;
 }
 
 .windows-95-logo-container a {
     color: var(--start-menu-bg);
     font-weight: bold;
     font-size: 1.5em;
-    
+        
 }
 
-.windows-menu-nav div a {
-    background-color: blue;
+.windows-menu-nav div a:hover {
+    background: var(--bg-hover);
+    color: var(--start-color-hover);
+}
+
+.logo-text {
+    text-decoration: none;
+}
+
+.start-img {
+    width: 40px;
+    height: auto;    
+    margin-right: 5px;
+}
+
+.start-img.documents {
+    width: 40px;
+}
+
+.start-text{
+    display: flex;
+    position: relative;
+    width: 70%;
+    justify-content: space-between;
+}
+
+.start-text span {
+    font-size: 10px;
+}
+.top-menu a:last-child{
+    border-bottom: 2px solid gray;
+}
+
+.bottom-menu a{
+    border-top: 2px solid white;
 }

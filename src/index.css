@@ -1,5 +1,5 @@
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: sans-serif;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.87);
   background-color: #096666;
@@ -14,6 +14,10 @@
 --footer-top-highlight: lightgray;
 --start-menu-bg: rgb(182, 182, 182);
 --start-menu-side-logo: gray;
+
+/*Start Menu*/
+--bg-hover: rgb(55, 101, 255);
+--start-color-hover: white;
 }
 
 body{

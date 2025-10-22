@@ -1,0 +1,19 @@
+.navbar-container{
+    position: absolute;
+}
+
+.nav-link-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-link-container img {
+    width: 40px;
+}
+
+.nav-link-container p {
+    font-size: 0.8em;
+    
+}

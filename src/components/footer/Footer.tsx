@@ -6,8 +6,9 @@ export default function Footer() {
   return (
     <div className='footer-container'>
         <StartMenu />
-        <button>
-            Start
+        <button className='start-btn'>
+          <img src='/Images/win95_start_icon.png'/>
+            <p>Start</p>
         </button>
     </div>
   )
