@@ -1,3 +1,5 @@
+
+
 .start-menu-container{
     position: absolute;
     width: 245px;
@@ -5,15 +7,17 @@
     height: 320px;
     bottom: 30px;
       border: 2px solid #fff;
-  border-right-color: #808080;
-  border-bottom-color: #505050;
-  box-shadow: 2px 2px 0 #00000040;
+    border-right-color: #808080;
+    border-bottom-color: #505050;
+    box-shadow: 2px 2px 0 #00000040;
     font-family: 'Microsoft Sans Serif', sans-serif;
     display: flex;
     flex-direction: row;
     justify-content: center;
     color: black;
     z-index: 20;
+    overflow: visible;
+    cursor: default;
 
 }
 
@@ -44,6 +48,12 @@
 .menu-item {
     border: none;
     outline: none;
+    cursor: default;
+}
+
+.menu-item p {
+    min-width: 150px;
+    padding: 0;
 }
 
 .windows-menu-nav {
@@ -56,7 +66,14 @@
     justify-content: space-between;
     padding: 4px 0;
     
-    
+}
+
+.bottom-menu {
+    border-top: 1px solid white;
+}
+
+.top-menu{
+    border-bottom: 1px solid gray;
 }
 
 .top-menu a,
@@ -69,6 +86,7 @@
     color: black;    
     width: 74%;
     font-size: 14px;
+    cursor: default;
 }
 
 .windows-95-logo-container a {
@@ -108,15 +126,16 @@
 }
 
 .start-text span {
+    display: flex;
     font-size: 10px;
-}
-.top-menu div:last-child{
-    border-bottom: 2px solid gray;
+    justify-content: center;
+    align-items: center;
 }
 
-.bottom-menu a{
-    border-top: 2px solid white;
+.start-text p {
+    margin-right: -5px;
 }
+
 
 .start-img.programs {
     transform: scale(1.6);
@@ -125,14 +144,14 @@
 
 .menu-item.programs:hover > .submenu {
     display: block;
-    
+}
+
+.menu-item.settings:hover > .submenu {
+    display: block;
 }
 
 .submenu {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 240px;
+ display: none;
   background: #c0c0c0;
   border: 2px solid #fff;
   border-right-color: #808080;
@@ -149,7 +168,21 @@
   text-decoration: none;
 }
 
+
+.submenu.programs {
+  position: absolute;
+  top: 0;
+  left: 240px;
+}
+
+.submenu.settings {
+    position: absolute;
+    top: 98px;
+    left: 240px;
+}
+
 .submenu a:hover {
   background: #000080;
   color: white;
 }
+

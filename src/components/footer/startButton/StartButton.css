@@ -1,0 +1,43 @@
+
+.start-btn {
+    position: absolute;
+    bottom: 1px;
+    padding: 0;
+    width: 68px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid gray;
+    border-bottom: 1px solid rgb(2, 2, 2);
+    border-right: 1px solid rgb(2, 2, 2);
+    box-shadow: inset -1px -1px 0 gray, inset 2px 2px 0 white;
+    margin-left: 1px;
+    background: none;
+}
+
+.start-btn img {
+    width: 28px;
+    height: 25px;
+    margin: 0;
+}
+
+.start-btn p {
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    margin: 0;
+    margin-left: 3px;
+    font-weight: bold;
+}
+
+
+
+.start-btn:active {
+  box-shadow: inset 1px 1px #d5e7ff, 
+  inset 1px 2px #89dcfd00, 
+  inset -2px 2px #61c2fb00, 
+  inset 2px -2px #1a5ae500;
+  outline: 1px dotted black;
+  outline-offset: -5px; 
+  background: #cacaca;
+  transform: translateY(1px);
+}
