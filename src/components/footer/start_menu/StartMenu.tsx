@@ -3,6 +3,7 @@ import './StartMenu.css';
 
 export default function StartMenu() {
   return (
+    <>
     <div className='start-menu-container'>
       <div className='windows-95-logo-container'>
         <a href='#' className='logo-text'>
@@ -12,18 +13,42 @@ export default function StartMenu() {
 
       <div className='windows-menu-nav'>
         <div className='top-menu'>
+
+
+          {/*Programs */}
+          <div className='menu-item programs'>
           <a href='#'>
             <img src='Images/win95_programs.png'
-            className='start-img'
+            className='start-img programs'
             />
             <p className='start-text'>Programs <span> ▶ </span></p>
           </a>
+
+          {/*Programs sub menu */}
+          <div className='submenu'>
+            <a>Accessories</a>
+            <a>StartUp</a>
+            <a>Microsoft Exchange</a>
+            <a>MS-DOS Prompt</a>
+            <a>The Microsoft Network</a>
+            <a>Windows Explorer</a>
+          </div>
+
+          </div>
+
+
+          <div className='menu-item'>
           <a href='#'>
             <img src='Images/win95_documents.png'
             className='start-img documents'
             />
             <p className='start-text'>Documents  <span> ▶ </span></p>
           </a>
+
+
+          </div>
+
+
           <a href='#'>
             <img src='Images/win95_settings.png'
             className='start-img'
@@ -57,6 +82,9 @@ export default function StartMenu() {
             </a>
         </div>
       </div>
+      
     </div>
+     
+    </>
   );
 }

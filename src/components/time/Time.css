@@ -1,0 +1,16 @@
+.date{
+    position: absolute;
+    right: 0;
+    bottom: 1px;
+    padding: 5px 10px;
+    margin-right: 10px;
+    color: black;
+    font-size: 0.7em;
+    border: 1px solid gray;
+    box-shadow: inset -1px -1px 0 white, inset 1px 1px 0 gray;
+
+}
+
+.date p {
+    margin: 0;
+}

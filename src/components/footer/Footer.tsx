@@ -1,6 +1,7 @@
 import React from 'react';
 import StartMenu from './start_menu/StartMenu';
 import '../footer/Footer.css';
+import Time from '../time/Time';
 
 export default function Footer() {
   return (
@@ -10,6 +11,9 @@ export default function Footer() {
           <img src='/Images/win95_start_icon.png'/>
             <p>Start</p>
         </button>
+        <div className='time-container'>
+          <Time/>
+        </div>
     </div>
   )
 }
